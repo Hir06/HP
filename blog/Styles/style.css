@@ -1,0 +1,67 @@
+﻿
+body {
+    background: #101;
+  overflow: hidden;
+  font-family: Helvetica;
+  font-size: 12px;
+    /*background-image:url('../Images/tumblr_lv6bvbfp6e1r1yutvo1_500.gif');
+    background-repeat:repeat-x;
+    background-repeat:repeat-y;
+    background-repeat:no-repeat;
+   background-size:cover;
+    overflow-y:scroll;*/   
+    height:100%;
+    width:100%;
+}
+  #logo{
+     height: 128px;
+   
+    vertical-align: middle;
+    margin-top: -32px;
+    margin-left: -20px;
+}
+nav{
+      /*background-color:black !important;*/
+  }
+.menu{
+        float: right;
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+  /*.drop {
+      background-color:blue;
+ 
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 20px;
+  top: -15px;
+}*/
+  #top-image{
+      background-image:url(../Images/prague_street_road_highway_building_lights_cars_light_movement_life_58998_3840x2160.jpg);
+      height:100%;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    background-position: -25px -50px;
+    background-size: calc(100% + 150px) calc(100% + 20px);
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    top:64px;
+    opacity:0.5;
+  }
+
+  .project-title{
+      text-shadow:1px 1px black;
+      /*text-decoration:underline;*/
+      font-weight:bold;
+      font-size:14px;
+  }

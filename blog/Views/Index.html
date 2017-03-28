@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="../Scripts/jquery-3.1.1.min.js"></script>
+    <link href="../content/materialize/css/materialize.min.css" rel="stylesheet" />
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+   <link href="../Styles/style.css" rel="stylesheet" />
+    <link href="../Styles/weather.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../Controllers/IndexController.js"></script>
+    <title>Hiral Parmar</title>
+    <script>
+        $(document).ready(function () {
+
+           
+         //   var intervalId = "";
+
+              //  intervalId = setInterval("letItRain()",60);
+              
+           // letItRain();
+        });
+        function letItRain() {
+            var x = Math.floor(Math.random() * parseInt($('body').css('width'))) + 1;
+            $('.rain').append("<div class='drop' style='left: " + x + "px;'></div>");
+            $('.drop').animate({
+                top: "600px",
+                left: "+=200px"
+            }, 1000, function () {
+                $(this).remove();
+            });
+        }
+        function docLoaded() {
+            var movementStrength = 25;
+            var height = movementStrength / window.innerHeight;
+            var width = movementStrength / window.innerWidth;
+            document.body.addEventListener('mousemove', function (e) {
+                var pageX = e.pageX - (window.innerWidth / 2);
+                var pageY = e.pageY - (window.innerHeight / 2);
+                var newvalueX = width * pageX * -1 - 25;
+                var newvalueY = height * pageY * -1 - 50;
+                var element = document.getElementById('top-image');
+                element.style.backgroundPosition = newvalueX + "px " + newvalueY + "px";
+
+            }, false);
+
+        }
+    </script>
+</head>
+<body onload="docLoaded()" ng-app="myApp" ng-controller="IndexController">
+    <div id="top-image"></div>
+
+    <div id="container">
+        <div class="weather rain" style="position: fixed;width: 100%;height: 100%;z-index: 0;"></div>
+
+        <div class="row">
+            <div class="col l2">&nbsp;</div>
+            <div class="col s12 m12 l8">
+                <hgroup></hgroup>
+                <nav style="background-color:black">
+                    <div>
+
+
+                        <!--<img src="../Images/Log.png" id="logo" />-->
+                        <a href="sass.html" class="menu">Works</a>
+                        <a href="badges.html" class="menu">About Me</a>&nbsp;&nbsp;
+
+
+
+
+
+                    </div>
+                </nav>
+            </div>
+
+
+        </div>
+
+        <div class="row" >
+            <div class="col s12 m12 l4" ng-repeat="data in data">
+                <div class="card-panel" style="border:solid 1px;">
+
+                    <p class="project-title">
+                        {{data.name}}
+                    </p>
+
+                    <div class="project-Description">
+                        {{data.description}}
+                    </div>
+
+                </div>
+
+            </div>
+            <!--<div class="col s12 m12 l4">
+                <div class="card-panel" style="border:solid 1px;">
+                    <div class="project-title">
+                        hello hiral
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card-panel" style="border:solid 1px;">
+                    <div class="black-text">
+                        hello hiral
+                    </div>
+
+                </div>
+
+            </div>-->
+        </div>
+</body>
+</html>
+    

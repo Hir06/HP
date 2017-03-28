@@ -1,0 +1,6 @@
+D:\Angular Apps\blog\blog\bin\blog.dll.config
+D:\Angular Apps\blog\blog\bin\blog.dll
+D:\Angular Apps\blog\blog\bin\blog.pdb
+D:\Angular Apps\blog\blog\obj\Debug\blog.dll
+D:\Angular Apps\blog\blog\obj\Debug\blog.pdb
+D:\Angular Apps\blog\blog\obj\Debug\blog.csprojResolveAssemblyReference.cache
