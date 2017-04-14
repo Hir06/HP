@@ -70,7 +70,6 @@
     <Content Include="content\materialize\css\materialize.min.css" />
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.svg" />
-    <Content Include="Controllers\IndexController.js" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\14f3b9ba840aad6eebc55b20756d1045.gif" />
     <Content Include="Images\2_animated_background.gif" />
@@ -79,6 +78,12 @@
     <Content Include="Images\large.gif" />
     <Content Include="Images\log.png" />
     <Content Include="Images\Logo.png" />
+    <Content Include="ng-app\components\work\work.html" />
+    <Content Include="ng-app\components\work\work.module.js" />
+    <Content Include="ng-app\components\work\work.service.js" />
+    <Content Include="ng-app\components\work\work.controller.js" />
+    <Content Include="ng-app\myApp.js" />
+    <Content Include="ng-app\Shared\constants.js" />
     <Content Include="Images\lower-manhattan-2-014.jpg" />
     <Content Include="Images\maxresdefault.jpg" />
     <Content Include="Images\prague_street_road_highway_building_lights_cars_light_movement_life_58998_3840x2160.jpg" />
@@ -88,7 +93,7 @@
     <Content Include="Scripts\typings\tween.js\tween.js.d.ts" />
     <Content Include="Styles\style.css" />
     <Content Include="Styles\weather.css" />
-    <Content Include="Views\Index.html" />
+    <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -933,7 +938,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ng-app\components\me\partials\" />
+    <Folder Include="ng-app\components\work\partials\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

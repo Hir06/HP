@@ -8,8 +8,8 @@ body {
     background-repeat:repeat-x;
     background-repeat:repeat-y;
     background-repeat:no-repeat;
-   background-size:cover;
-    overflow-y:scroll;*/   
+   background-size:cover;*/
+    overflow-y:scroll;   
     height:100%;
     width:100%;
 }
@@ -31,15 +31,15 @@ nav{
     font-style: normal;
 }
 
-  /*.drop {
+ .drop {
       background-color:blue;
- 
-  position: absolute;
+   position: absolute;
   display: block;
   width: 1px;
   height: 20px;
   top: -15px;
-}*/
+  opacity:0.5;
+}
   #top-image{
       background-image:url(../Images/prague_street_road_highway_building_lights_cars_light_movement_life_58998_3840x2160.jpg);
       height:100%;
