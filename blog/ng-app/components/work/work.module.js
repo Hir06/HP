@@ -10,10 +10,10 @@
     routeConfig.$inject = ['$routeProvider'];
 
     function routeConfig($routeProvider) {
-        $routeProvider.when('/dashBoard', {
+        $routeProvider.when('/DashBoard', {
             controller: 'workController',
             controllerAs: 'DashboardVM',
-            templateUrl: 'ng_app/components/work/work.html',
+            templateUrl: '../ng-app/components/work/work.html',
             //resolve: {}
         });
     }

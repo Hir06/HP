@@ -3,16 +3,18 @@
     angular.module('myApp.work.controller', [])
             .controller('workController', workController);
 
-    workController.$inject = ['$timeout', 'workService', 'appConstants'];
+    workController.$inject = ['$timeout','$scope','$location', 'workService', 'appConstants'];
 
-    function workController($timeout, workService, appConstants) {
+    function workController($timeout, $scope, $location, workService, appConstants) {
        
 
 
         var _this = this;
+        _this.hover = false;
         _this.LayoutClass = 'grid';
         _this.query = "";
-        _this.title = "Hello world";
+        //_this.title = "Hello world";
+       
         function getData(paramString) {
             var deferred = $q.defer();
             $http.get('http://starlord.hackerearth.com/kickstarter')
@@ -35,7 +37,13 @@
 
         //  _this.AppService = AppService;
         _this.fetchProjectDetails = fetchProjectDetails;
-    
+        _this.showDetail = showDetail;
+        function showDetail(projectName) {
+            alert(projectName);
+            $location.path(projectName);
+            //$location.url(projectName);
+            //$scope.$apply();
+        }
         function fetchProjectDetails() {
             var promiseObj = workService.fetchProjectDetails();
             promiseObj.then(function success(data) {

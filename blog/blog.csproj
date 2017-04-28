@@ -70,14 +70,32 @@
     <Content Include="content\materialize\css\materialize.min.css" />
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.svg" />
-    <Content Include="Images\1.jpg" />
     <Content Include="Images\14f3b9ba840aad6eebc55b20756d1045.gif" />
     <Content Include="Images\2_animated_background.gif" />
+    <Content Include="Images\asset.jpg" />
     <Content Include="Images\bg.jpg" />
+    <Content Include="Images\ecart.png" />
     <Content Include="Images\empire-state-building-new-york-high-resolution-desktop-background-wallpaper-full-free.jpg" />
+    <Content Include="Images\food.jpg" />
     <Content Include="Images\large.gif" />
+    <Content Include="Images\Leave.jpg" />
     <Content Include="Images\log.png" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Images\map.jpg" />
+    <Content Include="Images\me.jpg" />
+    <Content Include="Images\pf.jpg" />
+    <Content Include="Images\wfg.png" />
+    <Content Include="ng-app\components\me\me.controller.js" />
+    <Content Include="ng-app\components\me\me.html" />
+    <Content Include="ng-app\components\me\me.module.js" />
+    <Content Include="ng-app\components\me\me.service.js" />
+    <Content Include="ng-app\components\work\Images\Workflow\1.png" />
+    <Content Include="ng-app\components\work\Images\Workflow\2.png" />
+    <Content Include="ng-app\components\work\Images\Workflow\3.png" />
+    <Content Include="ng-app\components\work\Images\Workflow\4.png" />
+    <Content Include="ng-app\components\work\Images\Workflow\5.png" />
+    <Content Include="ng-app\components\work\Images\Workflow\6.png" />
+    <Content Include="ng-app\components\work\partials\workDetails.html" />
     <Content Include="ng-app\components\work\work.html" />
     <Content Include="ng-app\components\work\work.module.js" />
     <Content Include="ng-app\components\work\work.service.js" />
@@ -940,7 +958,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ng-app\components\me\partials\" />
-    <Folder Include="ng-app\components\work\partials\" />
+    <Folder Include="ng-app\components\work\Images\Assetsyncer\" />
+    <Folder Include="ng-app\components\work\Images\DesignerPortal\" />
+    <Folder Include="ng-app\components\work\Images\food vendor\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>
@@ -958,7 +978,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50268</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50898/</IISUrl>
+          <IISUrl>http://localhost:50879/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
