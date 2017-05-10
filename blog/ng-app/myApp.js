@@ -5,7 +5,8 @@
     var myApp = angular.module("myApp", [
                     'ngRoute',
                     'myApp.work',
-                    'myApp.me'
+                    'myApp.me',
+                    'myApp.workDetail'
                   
     ])
 

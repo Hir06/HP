@@ -7,7 +7,8 @@
 
     function meService($q, $http, appConstants) {
 
-
+        var meService = {};
+        return meService;
       
 
     }

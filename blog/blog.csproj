@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\myAppService.js" />
     <Content Include="content\projectData.htm" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -89,12 +90,16 @@
     <Content Include="ng-app\components\me\me.html" />
     <Content Include="ng-app\components\me\me.module.js" />
     <Content Include="ng-app\components\me\me.service.js" />
-    <Content Include="ng-app\components\work\Images\Workflow\1.png" />
-    <Content Include="ng-app\components\work\Images\Workflow\2.png" />
-    <Content Include="ng-app\components\work\Images\Workflow\3.png" />
-    <Content Include="ng-app\components\work\Images\Workflow\4.png" />
-    <Content Include="ng-app\components\work\Images\Workflow\5.png" />
-    <Content Include="ng-app\components\work\Images\Workflow\6.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\1.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\2.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\3.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\4.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\5.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\6.png" />
+    <Content Include="ng-app\components\workDetail\workDetail.controller.js" />
+    <Content Include="ng-app\components\workDetail\workDetail.html" />
+    <Content Include="ng-app\components\workDetail\workDetail.module.js" />
+    <Content Include="ng-app\components\workDetail\workDetail.service.js" />
     <Content Include="ng-app\components\work\partials\workDetails.html" />
     <Content Include="ng-app\components\work\work.html" />
     <Content Include="ng-app\components\work\work.module.js" />
@@ -958,9 +963,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ng-app\components\me\partials\" />
-    <Folder Include="ng-app\components\work\Images\Assetsyncer\" />
-    <Folder Include="ng-app\components\work\Images\DesignerPortal\" />
-    <Folder Include="ng-app\components\work\Images\food vendor\" />
+    <Folder Include="ng-app\components\workDetail\partials\Images\Assetsyncer\" />
+    <Folder Include="ng-app\components\workDetail\partials\Images\DesignerPortal\" />
+    <Folder Include="ng-app\components\workDetail\partials\Images\food vendor\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>

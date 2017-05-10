@@ -3,9 +3,9 @@
     angular.module('myApp.work.controller', [])
             .controller('workController', workController);
 
-    workController.$inject = ['$timeout','$scope','$location', 'workService', 'appConstants'];
+    workController.$inject = ['$rootScope','$scope','$route','$location','$timeout','$interval','workService','$http','$q','appConstants'];
 
-    function workController($timeout, $scope, $location, workService, appConstants) {
+    function workController($rootScope, $scope, $route, $location, $timeout, $interval, workService, $http, $q, appConstants) {
        
 
 
@@ -39,8 +39,14 @@
         _this.fetchProjectDetails = fetchProjectDetails;
         _this.showDetail = showDetail;
         function showDetail(projectName) {
-            alert(projectName);
-            $location.path(projectName);
+            
+            //alert(projectName);
+            $location.url('/workDetail/' + projectName);
+            //$scope.$applyAsync
+            //$location.url('/DashBoard/' + projectName);
+            //$scope.$apply();
+            //$location.path('/DashBoard/' + projectName);
+            //$state.go('/DashBoard/' + projectName);
             //$location.url(projectName);
             //$scope.$apply();
         }
