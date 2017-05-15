@@ -15,7 +15,7 @@
         _this.query = "";
    
         _this.fetchProjectDetails = fetchProjectDetails;
-      
+        _this.showRightImage = showRightImage;
       
         function fetchProjectDetails() {
             var promiseObj = myAppService.fetchProjectDetails();
@@ -36,7 +36,10 @@
         }
 
       
-    
+        function showRightImage(object) {
+            alert("object.target.className");
+
+        }
 
 
         fetchProjectDetails();

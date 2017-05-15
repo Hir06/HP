@@ -90,6 +90,8 @@
     <Content Include="ng-app\components\me\me.html" />
     <Content Include="ng-app\components\me\me.module.js" />
     <Content Include="ng-app\components\me\me.service.js" />
+    <Content Include="ng-app\components\workDetail\partials\Images\food vendor\unnamed %281%29.png" />
+    <Content Include="ng-app\components\workDetail\partials\Images\food vendor\unnamed.png" />
     <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\1.png" />
     <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\2.png" />
     <Content Include="ng-app\components\workDetail\partials\Images\Workflow System\3.png" />
@@ -965,7 +967,6 @@
     <Folder Include="ng-app\components\me\partials\" />
     <Folder Include="ng-app\components\workDetail\partials\Images\Assetsyncer\" />
     <Folder Include="ng-app\components\workDetail\partials\Images\DesignerPortal\" />
-    <Folder Include="ng-app\components\workDetail\partials\Images\food vendor\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <PropertyGroup>

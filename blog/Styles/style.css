@@ -227,6 +227,16 @@ nav{
     width:1022px;
 
 }
+
+
+.workDetail .image-container img{
+      width:1022px;
+      -webkit-filter:blur(2px);
+}
+.workDetail .image-container img:hover{
+   
+    -webkit-filter:blur(0);
+}
   .face {
   width: 100%;
   position: relative;
