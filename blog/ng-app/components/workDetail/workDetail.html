@@ -3,9 +3,10 @@
         <div class="row" ng-repeat="i in DetailVM.imageCount">
             <div class="image-container">
                 <figure>
-                    <img ng-src="ng-app/components/workDetail/partials/Images/{{DetailVM.projectName}}/{{i.index}}.png">
+                    <img id="workImage" ng-src="ng-app/components/workDetail/partials/Images/{{DetailVM.projectName}}/{{i.index}}.png">
+                 
                     <i class="fa fa-chevron-right" aria-hidden="true" style="font-size:18px;color:white;float:right;margin-top:-25%;margin-right:-13%;cursor:pointer"
-                       ng-click="showRightImage($event)">
+                       ng-click="DetailVM.showRightImage($event)">
 
                     </i>
                 </figure>

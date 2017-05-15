@@ -37,7 +37,11 @@
 
       
         function showRightImage(object) {
-            alert("object.target.className");
+            var imageIndex = object.target.previousElementSibling.src.split("/").pop(-1).split('.')[0];
+            imageIndex++;
+            var imageUrl = object.target.previousElementSibling.src;
+            $('#workImage').attr('src', 'imageUrl');
+           
 
         }
 
