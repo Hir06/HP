@@ -1,14 +1,14 @@
 ﻿<div class="pageGrid">
     <div class="row works" style="margin-left:50px;margin-right:50px;">
 
-        <div class="col s12 m6 l3" ng-repeat="data in DashboardVM.projectData">
+        <div class="col s10 m4 l3"  ng-repeat="data in DashboardVM.projectData">
             <div class="card">
                 <img ng-src="{{data.url}}" alt="Avatar" class="image" ng-click="DashboardVM.showDetail(data.name)">
                 <div class="overlay" ng-click="DashboardVM.showDetail(data.name)">
                     <div class="text">
                         <h2 class="card-title grey-text text-darken-4">{{data.name}}</h2>
                         <p>  {{data.description}}</p>
-                        <a href='/#/about'>Know More</a>
+                        <!--<a href='/#/about'>Know More</a>-->
                     </div>
                 </div>
                     <!--<ul class="demo-1 effect">

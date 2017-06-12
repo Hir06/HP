@@ -29,6 +29,12 @@
                     //}
 
                     _this.projectName = $routeParams.projectName;
+                    for (var i = 0; i < _this.projectData.length; i++) {
+                        if (_this.projectData[i].name == _this.projectName) {
+                            _this.projectDetail = _this.projectData[i];
+                        }
+                    }
+                //_this.projectDetail=
                     //_this.projectName.replace('', '%20');
             },
             function error() {
