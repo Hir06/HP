@@ -10,5 +10,9 @@
 
 
         var _this = this;
+        _this.changePos = changePos;
+        function changePos() {
+            alert('here');
+        }
     }
 })();

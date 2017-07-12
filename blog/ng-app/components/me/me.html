@@ -1,4 +1,22 @@
-﻿<!--<div class="img">
+﻿
+<script>
+    function docLoaded() {
+        var movementStrength = 25;
+        var height = movementStrength / window.innerHeight;
+        var width = movementStrength / window.innerWidth;
+        document.body.addEventListener('mousemove', function (e) {
+            var pageX = e.pageX - (window.innerWidth / 2);
+            var pageY = e.pageY - (window.innerHeight / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            var newvalueY = height * pageY * -1 - 50;
+            var element = document.getElementById('designer-image');
+            element.style.backgroundPosition = newvalueX + "px " + newvalueY + "px";
+
+        }, false);
+
+    }
+</script>
+<!--<div class="img">
     <div class="about-me">
 
 
@@ -46,7 +64,7 @@
     </div>
 </div>-->
 
-<div class="row">
+<div class="row" ng-controller="meController as mvm">
 
     <div class="col-12">
 
@@ -70,7 +88,7 @@
                 </div>
             </a>
 
-            <img id="face-img" class="face-img" src="../Images/me.jpg" alt="adham dannaway ui designer">
+            <img id="face-img" class="face-img" src="../Images/Designer.jpg" alt="Hiral ui designer" ng-mouseover="mvm.changePos()">
 
             <div id="designer-img" class="designer-img" style="left: 100px; opacity: 1;"></div>
             <div id="coder-img" class="coder-img" style="right: 100px; opacity: 1;"></div>
