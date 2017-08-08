@@ -1,0 +1,52 @@
+﻿<div class="pageGrid">
+    <div class="row works" style="margin-left:50px;margin-right:50px;">
+
+        <div class="col s12 m6 l3" ng-repeat="data in DashboardVM.projectData" style="margin-top:5em;">
+            <div class="card">
+                <img ng-src="{{data.url}}" alt="Avatar" class="image" ng-click="DashboardVM.showDetail(data.name)">
+                <div class="overlay" ng-click="DashboardVM.showDetail(data.name)">
+                    <div class="text">
+                        <h2 class="card-title grey-text text-darken-4">{{data.name}}</h2>
+                        <p> {{data.description}}</p>
+                        <a href='/#/about'>Know More</a>
+                    </div>
+                </div>
+                <!--<ul class="demo-1 effect">
+                        <li>
+                            <h2 class="card-title grey-text text-darken-4">{{data.name}}</h2>
+                            <p>  {{data.description}}</p>
+                            <a ng-href="#/DashBoard1">Clcik here</a>
+                            
+</li>
+                        <li>
+                            <img ng-src="{{data.url}}" class="top"/>
+                        </li>
+                    </ul>-->
+
+            </div>
+
+
+            <!--<article>
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img ng-src="{{data.url}}" class="top" ng-click="DashboardVM.showDetail(data.name)" />
+
+                    </div>
+                    <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{data.name}}<i class="material-icons right">more_vert</i></span>
+
+            </div>-->
+            <!--<div class="detailData" style="display:none" ng-click="DashboardVM.showDetail(data.name)">-->
+            <!--<h2 class="card-title grey-text text-darken-4">{{data.name}}</h2>
+                    <p>  {{data.description}}</p>-->
+            <!--<p>{{data.detailed}}</p>-->
+            <!--<p><a ng-click="DashboardVM.showDetail(data.name)" style="cursor:pointer">More Details</a></p>-->
+            <!--</div>-->
+            <!--</article>-->
+
+
+
+
+        </div>
+
+    </div>
+</div>
