@@ -1,11 +1,9 @@
-﻿
-
-(function () {
+﻿(function() {
     'use strict'
     var constants = angular.module("myApp")
-    .constant('appConstants', {
+        .constant('appConstants', {
 
-     //   LearningHubBaseURL: "http://starlord.hackerearth.com/kickstarter",
+            //   LearningHubBaseURL: "http://starlord.hackerearth.com/kickstarter",
 
-    });
+        });
 })();

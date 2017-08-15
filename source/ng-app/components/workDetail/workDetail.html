@@ -54,41 +54,71 @@
 <div class="">
     <div class="row workDetail" style="margin-left:50px;margin-right:50px;">
 
-     
-           <div class="card-panel">
-                <div class="s12">
+        <div class="row" ng-repeat="d in DetailVM.projectDetail.Data">
+            <div class="card-panel">
+                <div class="row">
 
-                    <div>
-                        <i class="material-icons">description</i>
-                        <span class="label">
+                    <div class="col l1"> <i class="material-icons">description</i></div>
+                    <div class="col l3"> <span class="label">
                    Project Overview:
-                       </span> {{DetailVM.projectDetail.detailed}}
-                    </div>
+                       </span></div>
+                    <div class="col l8 desc"> {{d.detailed}}</div>
 
-                    <div ng-if="DetailVM.projectDetail.technology.Frontend">
-                        <i class="material-icons">web</i>
-                        <span class="label">Frontend:</span>{{DetailVM.projectDetail.technology.Frontend}}
-                    </div>
-                    <div ng-if="DetailVM.projectDetail.technology.BackEnd">
-                        <i class="material-icons">tab</i>
-                        <span class="label"> BackEnd:</span>{{DetailVM.projectDetail.technology.BackEnd}}
-                    </div>
-                    <div ng-if="DetailVM.projectDetail.technology.EnvironmentAndTools">
-                        <i class="material-icons">settings</i>
-                        <span class="label">
-                              Environment And Tools:
-                       </span>{{DetailVM.projectDetail.technology.EnvironmentAndTools}}
-                    </div>
+                </div>
+                <div class="row">
 
+                    <div class="col l1"> <i class="material-icons">settings</i></div>
+                    <div class="col l3"> <span class="label">
+                   Technologies:
+                       </span></div>
+                    <div class="col l8 desc"> {{d.tech}}</div>
 
+                </div>
+                <div class="row">
+
+                    <div class="col l1"> <i class="material-icons">description</i></div>
+                    <div class="col l3"> <span class="label">
+                 Responsibilities:
+                       </span></div>
+                    <div class="col l8 desc"> {{d.Roles}}</div>
+
+                </div>
+                <div class="s12" ng-if="DetailVM.link">
+
+                    <div class="col l1"> <i class="material-icons">description</i></div>
+                    <div class="col l3"> <span class="label">
+                   Website:
+                       </span></div>
+                    <div class="col l8 desc"> {{d.link}}</div>
 
                 </div>
 
+                <div ng-if="DetailVM.projectDetail.technology.Frontend">
+                    <i class="material-icons">web</i>
+                    <span class="label">Frontend:</span>{{DetailVM.projectDetail.technology.Frontend}}
+                </div>
+                <div ng-if="DetailVM.projectDetail.technology.BackEnd">
+                    <i class="material-icons">tab</i>
+                    <span class="label"> BackEnd:</span>{{DetailVM.projectDetail.technology.BackEnd}}
+                </div>
+                <div ng-if="DetailVM.projectDetail.technology.EnvironmentAndTools">
+                    <i class="material-icons">settings</i>
+                    <span class="label">
+                              Environment And Tools:
+                       </span>{{DetailVM.projectDetail.technology.EnvironmentAndTools}}
+                </div>
+
+
+
             </div>
-
-
 
         </div>
 
- 
+    </div>
+
+
+
+</div>
+
+
 </div>
